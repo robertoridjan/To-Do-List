@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="icon" href="tab-icon.svg">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>To Do List</title>
+</head>
+<body>
+    
+    <header>
+        <textarea class="input_title" placeholder="Enter title..." spellcheck="false"></textarea>
+        <textarea class="input_comment" placeholder="Add a comment..." spellcheck="false"></textarea>
+    </header>
+
+    <form>
+        <textarea onkeyup="emptyInputValue()" class="todo-input" placeholder="Enter text here..." spellcheck="false"></textarea>
+        <button disabled class="todo-button" type="submit">
+            <img src="images/add.svg" alt="">
+            <span>Add</span>
+        </button>
+    </form>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
+
+    <div class="filter-select-box">
+        <div class="filter-select">
+            <div class="filter-todo">
+                <button class="filter-btn active" value="all">All</button>
+                <button class="filter-btn" value="completed">Completed</button>
+                <button class="filter-btn" value="uncompleted">Active</button>
+            </div>
+    
+            <button class="clearAll-btn">Clear all</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="inputResize.js"></script>
+    <script src="filterButtons.js"></script>
+    <script src="localStorage.js"></script>
+</body>
+</html>

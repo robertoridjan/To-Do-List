@@ -1,0 +1,39 @@
+@media only screen and (max-width: 768px) {
+    header {
+        padding-top: 42px;
+        padding-bottom: 22px;
+    }
+
+    .filter-select-box{
+        bottom: 4%;
+    }
+
+    .filter-select {
+        height: 36px;
+    }
+    
+    .filter-btn,
+    .clearAll-btn {
+        font-size: 14px;
+    }
+    .filter-btn {
+        padding: 0 6px;
+        margin: 0;
+    }
+
+    .filter-btn:hover {
+        height: 24px;
+    }
+
+    .filter-btn.active {
+        height: 24px;
+    }
+
+    .clearAll-btn {
+        padding: 0 6px;
+    }
+
+    .clearAll-btn:hover {
+        height: 24px;
+    }
+}
